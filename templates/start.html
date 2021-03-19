@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	
+	<body>
+		<p class="test">Population of State</p>
+		<br>
+		<form action="/">
+			<select name="state">
+				{{options1}}
+			</select>
+			<input type="submit">
+		</form>
+		<form class="info">
+			<p class="states"> {{_state}} ({{State1}}) </p>
+			<p class= "population">{{funfact1}}</p>
+		</form>
+		<p class="test">Population of County Within State</p>
+		<br>
+		<form action="/">
+			<select name="county">
+				{{options2}}
+			</select>
+			<input type="submit">
+		</form>
+		<form class="info">
+			<p class="states"> {{_county}} </p>
+			<p class= "population">{{funfact2}}</p>
+		</form>
+	<body>
+</html>
