@@ -5,29 +5,13 @@
 	</head>
 	
 	<body>
-		<p class="test">Population of State</p>
-		<br>
-		<form action="/">
-			<select name="state">
-				{{options1}}
-			</select>
-			<input type="submit">
-		</form>
-		<form class="info">
-			<p class="states"> {{_state}} ({{State1}}) </p>
-			<p class= "population">{{funfact1}}</p>
-		</form>
-		<p class="test">Population of County Within State</p>
-		<br>
-		<form action="/">
-			<select name="county">
-				{{options2}}
-			</select>
-			<input type="submit">
-		</form>
-		<form class="info">
-			<p class="states"> {{_county}} </p>
-			<p class= "population">{{funfact2}}</p>
+		<form action="/response.html">
+  			<label for="states">Choose a state and get a fact!</label>
+  				<select name="states" id="states">
+    			
+  				</select>
+  			<br><br>
+  			<input type="submit" value="Get a fact!">
 		</form>
 	<body>
 </html>
