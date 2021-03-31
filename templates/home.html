@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<form action="/funFact">
+  			<label for="states">Choose a state:</label>
+  			<select name="state" id="state">
+    			{{options}}
+  			</select>
+  			<br><br>
+  			<input type="submit" value="Get a fact!">
+		</form>
+		
+		<p>{{funFact}}</p>
+			
+	<body>
+</html>
