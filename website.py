@@ -41,4 +41,4 @@ def fun_fact_by_state(state):
 
 
 if __name__=='__main__':
-    app.run(debug=True, port=54321)
+    app.run(debug=False, port=54321)
